@@ -35,10 +35,6 @@ fi
 
 if [ $# -eq 3 ] ; then
   filename="$3"
-else: 
-
-   filename
-
 fi 
 
 if [ $# -gt 3 ] ; then
