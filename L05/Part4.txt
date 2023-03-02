@@ -1,0 +1,26 @@
+QUESTION 1 :How are the iterative and recursive algorithms similar and different for the same test cases?
+            Which has more repetition?
+            
+ANS -   They are similar in the sense that both of them are computing the same output through 2 different ways. 
+        They are different since one outputs using iteration over a range while other using repititive recursive calls.
+        Obviously, the recursive function has more recursive calls.
+        
+QUESTION 2 : What is the most executed line in the iterative and recursive algorithms? Are they the same?  
+
+ ANS - The most executed line in an iterative algorithm is typically the loop condition,which is checked on every iteration to determine
+ whether the loop should continue or terminate. In a recursive algorithm, the most executed line is typically the recursive call itself.
+ But the iterative statement is executed once while recursice function is executed multiple times, 
+ No the most executed lines are NOT the same 
+ 
+ QUESTION 3 : Are there any parts of the code which are not exercised?
+   Ans - As of now , I don't see any lines of that have not been called but there maybe some conditional statemets in general 
+         code which are not been called.
+         
+QUESTION 4 : If we were to try to optimize either function, where would be a good place to start?
+
+ANS - In an iterative function, a good place to start optimizing would be to make sure that the loop condition is efficient, 
+      i.e., that it is executed as few times as possible.
+      
+      In a recursive function, a good place to start optimizing would be to make sure that the recursion is not too deep 
+      or too frequent, as this can lead to a large number of function calls and stack frames, which can cause the program 
+      to run out of memory or slow down significantly. This can be achieved by using tail recursion.
