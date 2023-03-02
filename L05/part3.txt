@@ -1,0 +1,14 @@
+QUESTION 1 : WHY ARE ALL REPORTED TIMES EQUAL TO 0 ?
+   ANS - Since the processing power of the computer is very fast and the reported time is in milli or maybe nano seconds for these tasks,
+         it is shown to 0
+
+QUESTION 2 : Why is factors_itr only called once every time the program is run?
+ ANS - Since the factors_itr is a iterative function which loops in some given range, it doesnt need to be called again and again. 
+       That's why it is called only once
+       
+QUESTION 3 : Is there an obvious mathematical relationship between the input number and the number of
+            recursive calls? What about the number of prime factors each number produces?  
+            
+ANS -   Yes, Since a recursive function calls itself in it , it has to run multiple times. For example factorial of a number is n*fact(n-1) 
+        and when n=0 or 1, fact =1, so recursive function gives n-1 recursive calls if input is n. 
+        
