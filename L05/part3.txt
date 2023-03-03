@@ -9,7 +9,12 @@ QUESTION 2 : Why is factors_itr only called once every time the program is run?
 QUESTION 3 : Is there an obvious mathematical relationship between the input number and the number of
             recursive calls? What about the number of prime factors each number produces?  
             
-ANS -   Yes, Since a recursive function calls itself in it , it has to run multiple times. Yes the number of inputs and number of recursive calls are                 directly proportional and the actual relation is close to 2^n  where n is the number of inputs.
-For example factorial of a number is n*fact(n-1) 
+ANS -   Yes, Since a recursive function calls itself in it , it has to run multiple times. Yes , the relation between number of inputs and recursive calls  
+        is clone to 2^n. This is due to the fact that each prime factor of the input number causes the factor function to be called recursively. The number                 
+        of prime factors of the input number is proportional to the square root of the input number because the algorithm used in the factors.c file to 
+        discover the prime factors of a number is based on trial division. Because of this, the quantity of recursive calls is related to the square root 
+        of the input integer.
+        
+        For example factorial of a number is n*fact(n-1) 
         and when n=0 or 1, fact =1, so recursive function gives n-1 recursive calls if input is n. 
         
