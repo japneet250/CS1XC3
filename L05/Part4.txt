@@ -17,7 +17,7 @@ QUESTION 2 : What is the most executed line in the iterative and recursive algor
          code which are not been called.
          
 QUESTION 4 : If we were to try to optimize either function, where would be a good place to start?
-
+             We can start doing Caching .
 ANS - In an iterative function, a good place to start optimizing would be to make sure that the loop condition is efficient, 
       i.e., that it is executed as few times as possible.
       
