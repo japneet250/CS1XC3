@@ -13,12 +13,12 @@ QUESTION 2 : What is the most executed line in the iterative and recursive algor
  No the most executed lines are NOT the same 
  
  QUESTION 3 : Are there any parts of the code which are not exercised?
-   Ans - As of now , I don't see any lines of that have not been called but there maybe some conditional statemets in general 
-         code which are not been called.
+   Ans - According to me, Printarray() is never used. 
          
 QUESTION 4 : If we were to try to optimize either function, where would be a good place to start?
-             We can start doing Caching .
-ANS - In an iterative function, a good place to start optimizing would be to make sure that the loop condition is efficient, 
+  ANS -    We can start with Caching .
+             
+       In an iterative function, a good place to start optimizing would be to make sure that the loop condition is efficient, 
       i.e., that it is executed as few times as possible.
       
       In a recursive function, a good place to start optimizing would be to make sure that the recursion is not too deep 
