@@ -1,0 +1,7 @@
+/home/singj93
+/home/singj93/CS1XC3/L06
+singj93
+/home/singj93/.local/bin:/home/singj93/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+
+
+
