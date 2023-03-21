@@ -1,0 +1,25 @@
+CC = gcc 
+CFLAGS = -Wall
+BUILD_DIR = build
+SRC_DIR = src
+
+library.o : $(SRC_DIR)/library.c
+	./helper.sh
+	$(CC) $(CFLAGS) -c -o $(BUILD_DIR)/$@ $<
+
+multiply :$(SRC_DIR)/multiply.c
+	./helper.sh
+	$(CC) $(SRC_DIR)/library.c $< -o $(BUILD_DIR)/$@
+
+max : $(SRC_DIR)/max.c
+	./helper.sh
+	$(CC) $(SRC_DIR)/library.c $< -o $(BUILD_DIR)/$@
+
+square : $(SRC_DIR)/square.c
+	./helper.sh
+	$(CC) $(SRC_DIR)/library.c $<  -o $(BUILD_DIR)/$@
+
+all : library.o multiply max square 
+
+clean : 
+	rm -f -r build
