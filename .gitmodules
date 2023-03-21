@@ -10,3 +10,6 @@
 [submodule "L08/1XC3_L08"]
 	path = L08/1XC3_L08
 	url = https://github.com/japneet250/1XC3_L08.git
+[submodule "L08/CS1XC3_L08_P3."]
+	path = L08/CS1XC3_L08_P3.
+	url = https://github.com/japneet250/CS1XC3_L08_P3..git
