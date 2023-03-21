@@ -5,12 +5,12 @@ int main (){
     int arr [] = {1,2,3,4,5,6};
     printf("%d\n",arr[10]);
     bool a = true;
-    bool b = a+1;
-    printf("%i\n", b);
-    if (a==true){
+    a++;
+    printf("%i\n", a);
+    if (arr[0]==1){
         printf("true");
     }
-    else if (a==true){
+    else if (arr[0]==1){
         printf("false");
     }
     
