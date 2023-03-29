@@ -1,4 +1,4 @@
-main :  src/main.c documentation 
+main :  src/main.c documentation docs
 	scripts/./help.sh
 	gcc src/course.c src/student.c src/main.c -o build/main 
 
@@ -15,3 +15,9 @@ documentation :
 
 clean :
 	scripts/./help3.sh
+
+doxygen :
+	doxygen -g
+
+docs : doxygen
+	doxygen Doxyfile
