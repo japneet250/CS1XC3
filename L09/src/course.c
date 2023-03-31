@@ -1,6 +1,19 @@
 #include "course.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+/* 
+ * @file course.h
+ * @author Japneet Singh
+ * @date 29thMarch2023
+ * @brief 
+
+
+
+
+
+
+*/
  
 void enroll_student(Course *course, Student *student)
 {
