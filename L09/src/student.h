@@ -1,6 +1,9 @@
  /**
+@file Student.h
+@author Japneet Singh
+@date 29thMarch2023
 
-/brief A struct representing a student with their first name, last name, ID number, grades, and the number of grades.
+@brief A struct representing a student with their first name, last name, ID number, grades, and the number of grades.
 
 
 The Student struct is used to hold information about a student, including their first name, last name, ID number,
