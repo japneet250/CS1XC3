@@ -2,7 +2,10 @@
 #include <stdbool.h>
 
 /**
- * /brief Struct representing a course.
+ * @file course.h
+ * @author Japneet Singh
+ * @date 29thMarch2023
+ * @brief Struct representing a course.
  *
  * This struct contains information about a course, including its name, code, and the
  * students enrolled in the course.
