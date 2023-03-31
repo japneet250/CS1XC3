@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /* 
- * @file course.h
+ * @file course.c
  * @author Japneet Singh
  * @date 29thMarch2023
  * @brief 
