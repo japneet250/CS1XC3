@@ -9,8 +9,14 @@
  * @file main.c
  * @author Japneet Singh
  * @date 29thMarch2023
- * @brief 
-
+ * @brief The main function that tests the course functions.
+ 
+The function initializes a course named MATH101, enrolls 20 random students,
+prints the course information, finds the top student, and prints the information
+of all the passing students.
+@return 0 for successful program execution.
+@note The function uses the time.h library to seed the random number generator.
+*/
 
 
 
