@@ -3,6 +3,19 @@
 #include <string.h>
 #include "student.h"
 
+/* 
+ * @file student.c
+ * @author Japneet Singh
+ * @date 29thMarch2023
+ * @brief 
+
+
+
+
+
+
+*/
+
 void add_grade(Student* student, double grade)
 {
   student->num_grades++;
