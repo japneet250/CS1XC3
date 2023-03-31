@@ -5,6 +5,19 @@
 #include "time.h"
 #include "course.h"
 
+/* 
+ * @file main.c
+ * @author Japneet Singh
+ * @date 29thMarch2023
+ * @brief 
+
+
+
+
+
+
+*/
+
 int main()
 {
   srand((unsigned) time(NULL));
