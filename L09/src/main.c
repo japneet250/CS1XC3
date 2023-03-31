@@ -5,7 +5,7 @@
 #include "time.h"
 #include "course.h"
 
-/* 
+/**
  * @file main.c
  * @author Japneet Singh
  * @date 29thMarch2023
@@ -22,7 +22,7 @@ of all the passing students.
 
 
 
-*/
+
 
 int main()
 {
