@@ -1,1 +1,27 @@
+abc
+123
+...\.
+[cmf]an
+[^b]og
+[A-C][n-p][a-c]
+waz{3,5}up
+aa+b*c+ OR a{2,4}b{0,4}c{1,2}
+\d+ files? found\?
+\d\.\s+abc
+^Mission: successful$
+^(file.+)\.pdf$
+(\w+ (\d+))
+(\d+)x(\d+)
+I love (cats|dogs)
+.*
 
+ADDITIONAL PROBLEMS:
+
+^-?\d+(,\d+)*(\.\d+(e\d+)?)?$
+(\d{3})
+^([\w\.]*)
+<(\w+)
+(\w+)\.(jpg|png|gif)$
+^\s*(.*)\s*$
+(\w+)\(([\w\.]+):(\d+)\)
+(\w+)://([\w\-\.]+)(:(\d+))?
