@@ -1,6 +1,6 @@
 grep -r --include="*.tex" "\\includegraphics"   
  
-grep -rE '\\begin\{[^{}\[\]]+\}\s*$' *.tex
+grep -rE -P '(?<!{){\\begin\s*{[^{}]*}(?![\[{])' --include='*.tex' .
  
 grep -w -r "arbitrary\|bitwidth\|pointer" .
 
