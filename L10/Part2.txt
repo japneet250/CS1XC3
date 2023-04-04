@@ -1,1 +1,56 @@
+Q1.FIND ALL .TEX FILES ?
+find . -name "*.tex" > part2.txt
+
+Q2. Find all .tex files excluding the file “template.tex”?
+find .  -name "*.tex" ! -name "template.tex"
+
+Q3.Display the number of lines in each *.tex file ?
+find . -name "*.tex" -exec wc -l {} \;
+
+Q4. Find all .tex, .pdf and .toc file?
+find . \( -name "*.tex" -o -name "*.pdf" -o -name "*.toc" \)
+
+
+
+
+Q6..Remove all gedit backup files (file names ending in ∼)?
+find .  -name "*~" -type f -delete
+
+Q7. Remove all emacs backup files (file names beginning and ending with #?
+find . -name "#*#" -type f -print0 | xargs -0 rm
+
+Q8. Find only those image files (.png, .jpg, .bmp, .webp) whose file name (including extension) is exactly
+     10 characters long, and writes this list to a file named “goodFiles.txt?
+     
+     find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.bmp" -o -iname "*.webp" \) -a -name "??????????.*" -print > goodFiles.txt
+     
+ Q9 . Find all .log files and append them into one gigantic log file called “allTheLogs.log ?
+      find . -name "*.log" -type f -exec cat {} + > allTheLogs.log 
+      
+ Q10. To standard output, print the 10th line of every *.aux file that has a capital letter C in the file name ?
+ find . -type f -name '*[C]*.aux' -exec sed -n '10p' {} \;
+ 
+ Q11. Add executable permission to every .sh file?
+ find . -name "*.sh" -print0 | xargs -0 chmod +x
+ 
+ Q12. Append the first ten lines of every file name containing the work “ and ” (with spaces) to a file
+called “allheads.txt”?
+
+ find . -name "*and*" -type f -exec sh -c 'grep -q " and " "$1" && head -n 10 "$1"' _ {} \; >> allheads.txt
+
+
+Q13. Copy every image file (.png, .jpg, .jpeg, and .webp) to a folder called image_backup.?
+
+-type f \( -iname \*.png -o -iname \*.jpg -o -iname \*.jpeg -o -iname \*.webp \) -exec cp {} image_backup \;
+
+
+Q14. Write a command which takes a file (“filenames.txt”) containing file names and displays them in
+stdout?
+
+
+Q15. Write a command which takes a file containing glob patterns called “allTheGlobs.txt”, and finds all
+files matching those glob pattern?
+
+find . -type f -fprint /dev/stdout < allTheGlobs.txt
+
 
