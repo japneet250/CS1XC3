@@ -1,5 +1,5 @@
 Q1.FIND ALL .TEX FILES ?
-find . -name "*.tex" > part2.txt
+find . -name "*.tex" 
 
 Q2. Find all .tex files excluding the file “template.tex”?
 find .  -name "*.tex" ! -name "template.tex"
@@ -10,8 +10,8 @@ find . -name "*.tex" -exec wc -l {} \;
 Q4. Find all .tex, .pdf and .toc file?
 find . \( -name "*.tex" -o -name "*.pdf" -o -name "*.toc" \)
 
-
-
+Q5. Find the .pdf files from topics after topic 6?
+find . -name "*.pdf" -newermt "2023-06-01" -not -newermt "2023-06-06"
 
 Q6..Remove all gedit backup files (file names ending in ∼)?
 find .  -name "*~" -type f -delete
