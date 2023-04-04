@@ -6,7 +6,7 @@ grep -w -r "arbitrary\|bitwidth\|pointer" .
 
 grep -rEHn "(is|am|are|was|were|be|being|been) " --include='*S*.tex' .
 
-
+grep -r -Pzo '\\begin\{itemize\}\n\s*\\item' .
 
 grep -riE 'pointer\s*[{}]*\s+[RSTLNErstlne][[:alnum:]_]*'
 
