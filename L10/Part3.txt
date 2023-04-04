@@ -12,7 +12,7 @@ grep -riE 'pointer\s*[{}]*\s+[RSTLNErstlne][[:alnum:]_]*'
 
 grep -riE 'pointer\s*[{}]*\s+[RSTLNErstlne][[:alnum:]_]*'
 
-grep -rE 'if\s*\(([^()]|\([^()]*\))*\)\s*\{([^{}]*\{[^{}]*\}[^{}]*)*[^{}]*\}' *  --TOO BE CHANGED 
+grep -rE 'if\s*\(([^()]|\([^()]*\))*\)\s*\{([^{}]*\{[^{}]*\}[^{}]*)*[^{}]*\}' *  
 
 grep -rE '^(int|void|float|char)\s+(\*+\s*)*\s*[a-zA-Z_]+\s*\([^)]*\)\s*\{' --include='*.c' 
 
