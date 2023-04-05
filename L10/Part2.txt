@@ -11,7 +11,7 @@ Q4. Find all .tex, .pdf and .toc file?
 find . \( -name "*.tex" -o -name "*.pdf" -o -name "*.toc" \)
 
 Q5. Find the .pdf files from topics after topic 6?
-find . -name "*.pdf" -newermt "2023-06-01" -not -newermt "2023-06-06"
+find . -type f \( -iname "topic*[7-9]*.pdf" -o -iname "topic*[1-9][0-9]*.pdf" \)
 
 Q6..Remove all gedit backup files (file names ending in ∼)?
 find .  -name "*~" -type f -delete
